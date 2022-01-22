@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>orginfo update</title>
+    <link
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      rel="stylesheet"
+      integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.css"
+    />
+    <link rel="stylesheet" href="css/updateinfo.css" />
+
+
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="brand"><span>Enter your Organization info.</span></h1>
+      <div class="wrapper animated bounceInLeft">
+        <div class="company-info">
+          <h2>Enter the data as in to feed about your Organization</h2>
+
+        </div>
+        <div class="contact">
+          
+          <h3>Contact Us</h3>
+          <form id="dataform">
+            <p>
+              <label>organization name</label>  
+              <input type="text" name="orgname" id="orgname" placeholder="organization name"  />
+              </p>
+              <p>
+                <label>Head name</label>      
+                <input type="text" name="headname" id = "headname" placeholder= "head name" />
+              </p>
+              <p>
+                <label>aadhar no.</label>
+                <input type="number" name="aadhar" id ="aadhar" placeholder="aadharno." />
+              </p>
+  
+              
+              <p>
+                <label>Mobile no.</label>
+                <input type="number" name="phone" id="phone" placeholder="contact" />
+              </p>
+              <p>
+                <label>Pincode</label>
+                <input type="number" name="pincode" id = "pincode" placeholder="pincode" />
+              </p>
+  
+
+              <p>
+                <label>city/town</label>
+                <input type="text" name="city" id = "city" placeholder="city/town" />
+              </p>
+
+
+
+              <p>
+                <label>Working of org.</label>
+                <textarea rows="12" name="about" id="about" placeholder="description">
+                
+                </textarea>
+              </p>
+              <p>
+                <label>Address of organization from where it <br />operates their work</label>
+                <textarea rows="10" name="address" id="address" placeholder="complete address of organization">
+                
+                </textarea>
+              </p>
+              <p></p>
+              <p class="full">
+                <button>Submit</button>
+              </p>
+              <p>if updated go back to <a href = "login.html">home page</a></p>
+  
+              
+
+            
+            
+  
+          </div>
+          </form>
+
+
+        </div>
+      </div>
+    </div>
+
+	
+    <script src="https://www.gstatic.com/firebasejs/7.14.1/firebase-app.js"></script>
+	  <script src="https://www.gstatic.com/firebasejs/7.14.1/firebase-analytics.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.14.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.14.1/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.14.1/firebase-database.js"></script>
+  
+
+<script src = "js/initFirebase.js"></script>
+    <script src="js/updateinfo.js"></script>
+
+  </body>
+</html>

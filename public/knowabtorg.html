@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+  <title>search</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+  <link href="https://fonts.googleapis.com/css?family=Nunito:400,600,700" rel="stylesheet">
+  <link rel="stylesheet" href = "css/knowabtorg.css">
+  
+</head>
+<body>
+
+  
+<div class = "resultpage">
+  <div id="search_div" class="main-div">
+    <form id = searchform>
+    <h5>
+    <p class = "heading">Enter the pincode of the region in which you are browsing organization</p></h5>
+    <p>Back to<a href = "index.html">home page</a></p>
+    pincode: <input type="number" placeholder="pincode.." id="pincode" />
+    
+    <button type="submit">search</button>
+    </form>
+  
+  </div>
+
+    <p id = "noresult"></p>
+    <div id ="searchpage">
+          <ul id="search-list"></ul>
+    </div>
+
+    <div id = "info-page">
+
+          <!--Info in detail -->
+          <div class="container" style="margin-top:30px">
+            <div class="row">
+              <div class="col-sm-4">
+                  <div id="headinfo">
+                    
+  
+                
+                <p id="phone">contact no. </p>
+                <p id="email">email id</p>
+                <p id="pincode">pincode</p>
+                <p id="city">city</p>
+                <p id="aadhar">aadhar no.</p>
+
+               
+              </div>
+                <hr class="d-sm-none">
+              </div>
+              <div class="col-sm-8">
+  
+                <h2><p id = "orgname">TITLE HEADING</p></h2>
+  
+                <h4><p id="headname">Head of The ORG.</p></h4>
+                <p id = "address">address </p>
+                
+                <p>Working Of Organization</p>
+                <p id="about">jo marzi vo enter karrlo mera kya mai hun itna cha de diya tumhe option data dallo</p>
+                <br />
+              
+            </div>
+  
+          </div>
+        </div>
+        
+        <div class="jumbotron text-center" style="margin-bottom:0">
+          <ul class="icons">
+           
+            <p>For any issues or Bussiness contact us : <a href="https://www.instagram.com/team.vdt/" class="icon brands fa-instagram"><span class="label">Instagram</span></a>
+            <a href="#" class="icon solid fa-envelope"><span class="label">  Email</span></a></p>
+          </ul>
+          <ul class="copyright">
+            <p>&copy; copyright@2020TEAMVDT  Clement Town, Dehradun</p>
+          </ul>
+        </div>
+
+    </div>
+  </div>
+
+
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <!--firebase script-->
+
+
+
+  <script src="https://www.gstatic.com/firebasejs/7.14.1/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.14.1/firebase-analytics.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.14.1/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.14.1/firebase-firestore.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.14.1/firebase-database.js"></script>
+  <script src="js/initFirebase.js"></script>
+  <script src="js/knowabtorg.js"></script>
+
+
+ 
+
+
+</body>
+</html>

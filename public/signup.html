@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>signup</title>
+
+
+
+
+    <link
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      rel="stylesheet"
+      integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.css"
+    />
+    <link rel="stylesheet" href="css/updateinfo.css" />
+  </head>
+  <body>
+
+
+    <div class="container">
+      <h1 class="brand"><span>Enter your Organization info.</span></h1>
+      <div class="wrapper animated bounceInLeft">
+        <div class="company-info">
+          <h2>Enter the data as in to feed about your Organization</h2>
+          <p id = "checkpass"></p>
+
+        </div>
+        <div class="contact">
+          
+          <h3>Contact Us</h3>
+          <form id="signup-form">
+
+
+            <p>
+              <label>organization name</label>  
+              <input type="text" name="orgname" id="orgname" placeholder="organization name"  />
+              </p>
+              <p>
+                <label>Head name</label>      
+                <input type="text" name="headname" id = "headname" placeholder= "head name" />
+              </p>
+              <p>
+                <label>aadhar no.</label>
+                <input type="number" name="aadhar" id ="aadhar" placeholder="aadharno." />
+              </p>
+  
+              
+              <p>
+                <label>Mobile no.</label>
+                <input type="number" name="phone" id="phone" placeholder="contact" />
+              </p>
+              <p>
+                <label>Pincode</label>
+                <input type="number" name="pincode" id = "pincode" placeholder="pincode" />
+              </p>
+  
+
+              <p>
+                <label>city/town</label>
+                <input type="text" name="city" id = "city" placeholder="city/town" />
+              </p>
+
+
+
+              <p>
+                <label>Working of org.</label>
+                <textarea rows="12" name="about" id="about" placeholder="description">
+                
+                </textarea>
+              </p>
+              <p>
+                <label>Address of organization from where it <br />operates their work</label>
+                <textarea rows="10" name="address" id="address" placeholder="complete address of organization">
+                
+                </textarea>
+              </p>
+              
+              <p>
+                <label>E-mail</label>
+                <input type="text"  id ="email_field" placeholder="E-mail" />
+              </p>
+
+              <p>
+                <label>Password</label>
+                <input type="password"  id="password_field" placeholder="Password" />
+              </p>
+              <p>
+                <lable>Confirm Password</lable>
+                <input type="password"  id = "password_field1" placeholder="Retype password" />
+              </p>
+
+              <p></p>
+
+              <p>already have account<br />
+                <a href="login.html">
+                   login</a>
+              </p>
+              <p>go to home page<br />
+                <a href="index.html">
+                   click here</a>
+              </p>
+              
+              <p class="full">
+                <button type="submit">sign up</button>
+              </p>
+  
+  
+          </div>
+          </form>
+
+
+        </div>
+      </div>
+    </div>
+
+    
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+      <!--firebase script-->
+	
+      <script src="https://www.gstatic.com/firebasejs/7.14.1/firebase-app.js"></script>
+      <script src="https://www.gstatic.com/firebasejs/7.14.1/firebase-analytics.js"></script>
+      <script src="https://www.gstatic.com/firebasejs/7.14.1/firebase-auth.js"></script>
+      <script src="https://www.gstatic.com/firebasejs/7.14.1/firebase-firestore.js"></script>
+      <script src="https://www.gstatic.com/firebasejs/7.14.1/firebase-database.js"></script>
+      
+    <script src="js/initFirebase.js"></script>
+    <script src = "js/signup.js"></script>
+    
+   
+  </body>
+</html>
